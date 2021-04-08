@@ -1,0 +1,15 @@
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\avicomTestChallange.exe.config
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\avicomTestChallange.exe
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\avicomTestChallange.pdb
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.csprojAssemblyReference.cache
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\MainWindow.g.cs
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\App.g.cs
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange_MarkupCompile.cache
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange_MarkupCompile.lref
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\MainWindow.baml
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.g.resources
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.Properties.Resources.resources
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.csproj.GenerateResource.cache
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.csproj.CoreCompileInputs.cache
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.exe
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.pdb

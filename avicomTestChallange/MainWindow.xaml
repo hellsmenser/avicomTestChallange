@@ -1,0 +1,30 @@
+﻿<Window x:Class="avicomTestChallange.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avicomTestChallange"
+        mc:Ignorable="d"
+        Title="ООО Софт Трейд Плюс" Height="470" Width="815" WindowStyle="ThreeDBorderWindow" FontSize="14" FontFamily="Times New Roman">
+    <Grid x:Name="MainGrid" Background="White" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="553*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid HorizontalAlignment="Left" Height="317" Margin="10,42,0,0" VerticalAlignment="Top" Width="772" Grid.ColumnSpan="2"/>
+        <Button Content="Отобразить по фильтру" Margin="10,364,62,0" VerticalAlignment="Top" Height="50"/>
+        <Button Content="Изменить" HorizontalAlignment="Left" Margin="185,364,0,0" VerticalAlignment="Top" Width="170" Height="50" Grid.ColumnSpan="2"/>
+        <Button Content="Выход" HorizontalAlignment="Left" Margin="373,364,0,0" VerticalAlignment="Top" Width="170
+                " Height="50" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Margin="65,10,0,0" VerticalAlignment="Top" Width="164" RenderTransformOrigin="1.408,1.5">
+            <ComboBoxItem Content="Менеджеры"/>
+            <ComboBoxItem Content="Клиенты"/>
+            <ComboBoxItem Content="Клиенты по менеджерам"/>
+            <ComboBoxItem Content="Товары"/>
+            <ComboBoxItem Content="Товары по клиентам"/>
+            <ComboBoxItem Content="Клиенты по статусам"/>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Фильтр" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
