@@ -13,3 +13,12 @@ G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.c
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.csproj.CoreCompileInputs.cache
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.exe
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.pdb
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\System.Data.SqlClient.dll
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\System.Data.SqlClient.xml
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\avicomTestChallange.csproj.CopyComplete
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignColors.dll
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignThemes.Wpf.dll
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignColors.pdb
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignThemes.Wpf.pdb
+G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignThemes.Wpf.xml
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\App.baml

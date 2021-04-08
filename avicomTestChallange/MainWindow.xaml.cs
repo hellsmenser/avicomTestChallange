@@ -20,9 +20,29 @@ namespace avicomTestChallange
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        ApplicationContext db;
+
         public MainWindow()
         {
             InitializeComponent();
+            db = new ApplicationContext();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+        }
+
+
+        private void Filter_Btn_click(object sender, RoutedEventArgs e)
+        {/*
+            //получаем фильтер
+            ComboBoxItem selectedItem = (ComboBoxItem)filter.SelectedItem;
+            string curfilter = selectedItem.Content.ToString();
+            */
+
         }
     }
-}
+
+    }
+
