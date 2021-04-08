@@ -31,7 +31,7 @@ CREATE TABLE Products(
 );
 
 CREATE TABLE BuyedProducts(
-	Client INT FOREIGN KEY REFERENCES Clients(id) NOT NULL,
-	Product INT FOREIGN KEY REFERENCES Products(id) NOT NULL,
+	client INT FOREIGN KEY REFERENCES Clients(id) NOT NULL,
+	product INT FOREIGN KEY REFERENCES Products(id) NOT NULL,
 	PRIMARY KEY(Client, Product)
 );
