@@ -9,7 +9,7 @@
         Title="ООО Софт Трейд Плюс" Height="300" Width="400" WindowStyle="ThreeDBorderWindow" FontSize="14" FontFamily="Times New Roman" Loaded="Window_Loaded">
         
     <Grid x:Name="MainGrid" Background="White" Margin="0,0,0,0">
-        <TextBlock Text="Меню" FontSize="35" Margin="145,30,145,180"/>
+        <TextBlock Text="Меню" FontSize="35" Margin="10,30,10,180" HorizontalAlignment="Center"/>
         <Button Content="Просмотр данных" FontSize="20" Margin="50,70,50,130" Height="50" Click="ViewDataClick"/>
         <Button Content="Изменить данные" FontSize="20" Margin="50,130,50,80" Height="50" Click="EditDataClick"/>
         <Button Content="Выход" FontSize="20" Margin="50,180,50,20" Height="50" Click="ExitBtn"/>
