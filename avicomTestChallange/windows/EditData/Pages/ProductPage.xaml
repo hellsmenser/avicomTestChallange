@@ -10,7 +10,7 @@
       Title="ProductPage" Loaded="Page_Loaded">
 
     <Grid Background="White" RenderTransformOrigin="0.349,0.77">
-        <DataGrid Height="200" Margin="0, 10, 0, 240" x:Name="Products" AutoGenerateColumns="False">
+        <DataGrid Height="200" Margin="0, 10, 0, 240" x:Name="Products" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding name}" Header="Наименование" Width="200"/>
                 <DataGridTextColumn Binding="{Binding type}" Header="Тип лицензии" Width="200"/>

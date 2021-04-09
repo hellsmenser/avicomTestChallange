@@ -9,7 +9,7 @@
       Title="ProductList" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <DataGrid x:Name="grid" AutoGenerateColumns="False">
+        <DataGrid x:Name="grid" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding name}" Header="Наименование" Width="350"/>
                 <DataGridTextColumn Binding="{Binding type}" Header="Тип лицензии" Width="150"/>

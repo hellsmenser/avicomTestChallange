@@ -9,7 +9,7 @@
       Title="ClientByStatus" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <DataGrid x:Name="grid" AutoGenerateColumns="False">
+        <DataGrid x:Name="grid" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding status}" Header="Статус" Width="600"/>
                 <DataGridTextColumn Binding="{Binding count}" Header="Колличество клиентов" Width="200"/>

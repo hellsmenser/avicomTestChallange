@@ -20,10 +20,6 @@ G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignColors.
 G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignThemes.Wpf.pdb
 G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\MaterialDesignThemes.Wpf.xml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\App.baml
-G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.dll
-G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.SqlServer.dll
-G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.xml
-G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.SqlServer.xml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\EditDataWindow.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientByManagers.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientByStatus.g.cs

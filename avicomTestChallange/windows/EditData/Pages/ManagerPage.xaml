@@ -10,7 +10,7 @@
       Title="ManagerPage" Loaded="Page_Loaded">
 
     <Grid Background="White" RenderTransformOrigin="0.349,0.77">
-        <DataGrid Height="300" Margin="0, 10, 0, 150" AutoGenerateColumns="False" x:Name="Managers">
+        <DataGrid Height="300" Margin="0, 10, 0, 150" AutoGenerateColumns="False" x:Name="Managers" IsReadOnly="True">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding name}" Header="Менеджер" Width="800"/>
             </DataGrid.Columns>
