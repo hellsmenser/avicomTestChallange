@@ -1,14 +1,5 @@
 ﻿
-FG:\repos\avicomTestChallange\avicomTestChallange\App.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\EditData\EditDataWindow.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\MainWindow.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\EditData\Pages\ClientPage.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\EditData\Pages\ManagerPage.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\EditData\Pages\ProductPage.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\Pages\ClientByManagers.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\Pages\ClientByStatus.xaml;;
+
 FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\Pages\ClientList.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\Pages\ProductList.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\Pages\ProductsByClients.xaml;;
-FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\ViewDataWindow.xaml;;
+FG:\repos\avicomTestChallange\avicomTestChallange\windows\ViewData\Pages\ManagerList.xaml;;
 

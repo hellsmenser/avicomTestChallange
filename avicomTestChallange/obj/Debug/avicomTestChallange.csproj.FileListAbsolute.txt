@@ -25,16 +25,12 @@ G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.SqlSe
 G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.xml
 G:\repos\avicomTestChallange\avicomTestChallange\bin\Debug\EntityFramework.SqlServer.xml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\EditDataWindow.g.cs
-G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\Managers.g.cs
-G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\Products.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientByManagers.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientByStatus.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientList.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ProductList.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ProductsByClients.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\EditDataWindow.baml
-G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\Managers.baml
-G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\Products.baml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientByManagers.baml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientByStatus.baml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ClientList.baml
@@ -46,3 +42,7 @@ G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Page
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\ClientPage.baml
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\ManagerPage.g.cs
 G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\ProductPage.g.cs
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\ManagerPage.baml
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\EditData\Pages\ProductPage.baml
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ManagerList.g.cs
+G:\repos\avicomTestChallange\avicomTestChallange\obj\Debug\windows\ViewData\Pages\ManagerList.baml

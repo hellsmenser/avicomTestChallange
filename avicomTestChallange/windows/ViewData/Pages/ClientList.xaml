@@ -6,14 +6,14 @@
       xmlns:local="clr-namespace:avicomTestChallange.windows.ViewData.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ClientList">
+      Title="ClientList" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <DataGrid>
+        <DataGrid x:Name="grid" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Имя" Width="300"/>
-                <DataGridTextColumn Header="Статус" Width="200"/>
-                <DataGridTextColumn Header="Менеджер" Width="300"/>
+                <DataGridTextColumn Binding="{Binding name}" Header="Имя" Width="300"/>
+                <DataGridTextColumn Binding="{Binding status}" Header="Статус" Width="200"/>
+                <DataGridTextColumn Binding="{Binding manager}" Header="Менеджер" Width="300"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

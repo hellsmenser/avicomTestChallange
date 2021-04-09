@@ -6,15 +6,15 @@
       xmlns:local="clr-namespace:avicomTestChallange.windows.ViewData.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ProductList">
+      Title="ProductList" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <DataGrid>
+        <DataGrid x:Name="grid" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Наименование" Width="200"/>
-                <DataGridTextColumn Header="Тип лицензии" Width="200"/>
-                <DataGridTextColumn Header="Цена" Width="200"/>
-                <DataGridTextColumn Header="Период" Width="200"/>
+                <DataGridTextColumn Binding="{Binding name}" Header="Наименование" Width="350"/>
+                <DataGridTextColumn Binding="{Binding type}" Header="Тип лицензии" Width="150"/>
+                <DataGridTextColumn Binding="{Binding price}" Header="Цена" Width="150"/>
+                <DataGridTextColumn Binding="{Binding period}" Header="Период" Width="150"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

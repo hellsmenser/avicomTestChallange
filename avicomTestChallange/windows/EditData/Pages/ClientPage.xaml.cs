@@ -111,7 +111,7 @@ namespace avicomTestChallange.windows.EditData.Pages
             //не выделен ни одна строка
             if (Clients.SelectedItems.Count != 1)
             {
-                MessageBox.Show("Выделено неверное колличество клиентов");
+                MessageBox.Show("Выделено неверное колличество обьектов");
             }
             else
             {
@@ -184,7 +184,7 @@ namespace avicomTestChallange.windows.EditData.Pages
             //не выделена ни одна строка
             if(Clients.SelectedItems.Count != 1)
             {
-                MessageBox.Show("Выделено неверное колличество клиентов");
+                MessageBox.Show("Выделено неверное колличество обьектов");
             }
             else
             {

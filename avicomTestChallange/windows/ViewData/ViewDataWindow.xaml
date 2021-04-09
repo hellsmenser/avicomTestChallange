@@ -9,12 +9,12 @@
         Title="ViewDataWindow" Height="600" Width="800" WindowStyle="None">
     <Grid>
         <Frame Height="450" Width="800" Margin="0, 0, 0, 150" x:Name="gridFrame"  NavigationUIVisibility="Hidden"></Frame>
-        <Button Height="40" Width="200" Margin="10, 450, 580, 70" Content="Менеджеры"/>
-        <Button Height="40" Width="200" Margin="220,450,370,70" Content="Клиенты"/>
-        <Button Height="40" Width="200" Margin="10,500,581,10" Content="Клиенты по менеджерам"/>
-        <Button Height="40" Width="200" Margin="430,450,160,70" Content="Товары"/>
-        <Button Height="40" Width="200" Margin="220, 500, 370, 10" Content="Товары по клиентам"/>
-        <Button Height="40" Width="200" Margin="430, 500, 160, 10" Content="Клиенты по статусам"/>
+        <Button Height="40" Width="200" Margin="10, 450, 580, 70" Content="Менеджеры" Click="Managers"/>
+        <Button Height="40" Width="200" Margin="220,450,370,70" Content="Клиенты" Click="Clients"/>
+        <Button Height="40" Width="200" Margin="430,450,160,70" Content="Товары" Click="Products"/>
+        <Button Height="40" Width="200" Margin="10,500,581,10" Content="Клиенты по менеджерам" Click="ClientsByManagers"/>
+        <Button Height="40" Width="200" Margin="220, 500, 370, 10" Content="Товары по клиентам" Click="ProductsByClients"/>
+        <Button Height="40" Width="200" Margin="430, 500, 160, 10" Content="Клиенты по статусам" Click="ClientByStatus"/>
         <Button Height="40" Width="100" Margin="680, 500, 10, 10" Content="Выход" Click="ReturnBtn"/>
 
     </Grid>

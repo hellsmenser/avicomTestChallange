@@ -6,13 +6,13 @@
       xmlns:local="clr-namespace:avicomTestChallange.windows.ViewData.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ProductsByClients">
+      Title="ProductsByClients" Loaded="Page_Loaded">
 
     <Grid Background="White">
-        <DataGrid>
+        <DataGrid x:Name="grid" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Наименование" Width="600"/>
-                <DataGridTextColumn Header="Колличество Покупок" Width="200"/>
+                <DataGridTextColumn Binding="{Binding name}" Header="Наименование" Width="600"/>
+                <DataGridTextColumn Binding="{Binding count}" Header="Колличество Покупок" Width="200"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>
