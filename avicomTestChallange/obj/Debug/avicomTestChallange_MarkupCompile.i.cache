@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 G:\repos\avicomTestChallange\avicomTestChallange\App.xaml
-11151548125
+1152379142
 
-1147295417
+161331749330
 18-1056068430
-MainWindow.xaml;
+windows\EditData\EditDataWindow.xaml;MainWindow.xaml;windows\EditData\Pages\ClientPage.xaml;windows\EditData\Pages\ManagerPage.xaml;windows\EditData\Pages\ProductPage.xaml;windows\ViewData\Pages\ClientByManagers.xaml;windows\ViewData\Pages\ClientByStatus.xaml;windows\ViewData\Pages\ClientList.xaml;windows\ViewData\Pages\ProductList.xaml;windows\ViewData\Pages\ProductsByClients.xaml;windows\ViewData\ViewDataWindow.xaml;
 
-False
+True
 

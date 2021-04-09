@@ -1,0 +1,19 @@
+﻿<Page x:Class="avicomTestChallange.windows.ViewData.Pages.ProductsByClients"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:avicomTestChallange.windows.ViewData.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ProductsByClients">
+
+    <Grid Background="White">
+        <DataGrid>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Наименование" Width="600"/>
+                <DataGridTextColumn Header="Колличество Покупок" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

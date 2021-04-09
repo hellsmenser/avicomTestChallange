@@ -1,0 +1,16 @@
+﻿<Window x:Class="avicomTestChallange.windows.EditData.EditDataWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:avicomTestChallange.windows.EditData"
+        mc:Ignorable="d"
+        Title="EditDataWindow" Height="520" Width="800" WindowStyle="None">
+    <Grid>
+        <Frame Height="450" Width="800" Margin="0, 0, 0, 70" x:Name="editDataFrame" NavigationUIVisibility="Hidden"></Frame>
+        <Button Height="40" Width="200" Margin="10, 450, 580, 10" Content="Менеджеры" Click="ManagerEdit"/>
+        <Button Height="40" Width="200" Margin="220,450,370,10" Content="Клиенты" Click="ClientEdit"/>
+        <Button Height="40" Width="200" Margin="430,450,160,10" Content="Товары" Click="ProductEdit"/>
+        <Button Height="40" Width="100" Margin="680, 450, 10, 10" Content="Выход" Click="Returnbtn"/>
+    </Grid>
+</Window>

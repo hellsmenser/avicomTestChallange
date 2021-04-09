@@ -6,14 +6,12 @@
         xmlns:local="clr-namespace:avicomTestChallange"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="ООО Софт Трейд Плюс" Height="470" Width="400" WindowStyle="ThreeDBorderWindow" FontSize="14" FontFamily="Times New Roman" Loaded="Window_Loaded">
+        Title="ООО Софт Трейд Плюс" Height="300" Width="400" WindowStyle="ThreeDBorderWindow" FontSize="14" FontFamily="Times New Roman" Loaded="Window_Loaded">
         
     <Grid x:Name="MainGrid" Background="White" Margin="0,0,0,0">
-        <TextBlock Text="Меню" FontSize="35" Margin="145,30,145,35"/>
-        <Button Content="Просмотр данных" FontSize="20" Margin="50,70,50,280" Height="50"/>
-        <Button Content="Изменить менеджеров" FontSize="20" Margin="50,130,50,220" Height="50"/>
-        <Button Content="Изменить клиентов" FontSize="20" Margin="50,190,50,160" Height="50"/>
-        <Button Content="Изменить товары" FontSize="20" Margin="50,250,50,100" Height="50"/>
-        <Button Content="Выход" FontSize="20" Margin="50,310,50,40" Height="50"/>
+        <TextBlock Text="Меню" FontSize="35" Margin="145,30,145,180"/>
+        <Button Content="Просмотр данных" FontSize="20" Margin="50,70,50,130" Height="50" Click="ViewDataClick"/>
+        <Button Content="Изменить данные" FontSize="20" Margin="50,130,50,80" Height="50" Click="EditDataClick"/>
+        <Button Content="Выход" FontSize="20" Margin="50,180,50,20" Height="50" Click="ExitBtn"/>
     </Grid>
 </Window>
