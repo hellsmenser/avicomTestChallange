@@ -26,7 +26,7 @@ CREATE TABLE Products(
 	name VARCHAR(50) NOT NULL,
 	type VARCHAR(8) NOT NULL,
 	price INT NOT NULL,
-	period VARCHAR(8),
+	period VARCHAR(8) NOT NULL,
 	PRIMARY KEY(id)
 );
 

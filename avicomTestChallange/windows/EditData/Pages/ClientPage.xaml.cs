@@ -28,6 +28,7 @@ namespace avicomTestChallange.windows.EditData.Pages
         Query query = new Query();
         Exception ex = null;
         int curid;
+        DataTable man;
 
         //сообщение об ошибке
         private void Excpt()
@@ -65,7 +66,7 @@ namespace avicomTestChallange.windows.EditData.Pages
             //настройказапроса к бд
             string managerReq = "SELECT * FROM Managers";
             string statusReq = "SELECT * FROM ClientStatus";
-            DataTable man = new DataTable();
+            man = new DataTable();
             DataTable stat = new DataTable();
 
             //получаем имена менеджеров и заполняем ими комбобокс
@@ -142,7 +143,7 @@ namespace avicomTestChallange.windows.EditData.Pages
             {
                 cmd.Parameters.Add("@name", SqlDbType.NVarChar, 50).Value = ClientName.Text;
                 cmd.Parameters.Add("@status", SqlDbType.NVarChar, 15).Value = ClientStatus.SelectedItem;
-                cmd.Parameters.Add("@managerId", SqlDbType.NVarChar, 15).Value = ClientManager.SelectedIndex;
+                cmd.Parameters.Add("@managerId", SqlDbType.NVarChar, 15).Value = (int)man.Rows[ClientManager.SelectedIndex][0]; ;
                 cmd.Parameters.Add("@curid", SqlDbType.Int).Value = curid;
             }
             catch (Exception cex)
@@ -197,7 +198,7 @@ namespace avicomTestChallange.windows.EditData.Pages
             //плучаем параметры из полей ввода
             string name = ClientName.Text;
             string status = ClientStatus.Text;
-            int managerId = ClientManager.SelectedIndex;
+            int managerId = (int)man.Rows[ClientManager.SelectedIndex][0];
 
             //настраиваем запрос
             string addQuery = "INSERT INTO Clients([name], [status], [manager])" +
