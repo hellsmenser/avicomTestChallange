@@ -10,10 +10,13 @@ using System.Windows;
 
 namespace avicomTestChallange.windows
 {
+    /// <summary>
+    /// Обращение к базе данных по localhost
+    /// </summary>
     class Query
     {
 
-        string conn = "Data Source=DESKTOP-5QF6I54;" +
+        string conn = "Data Source=localhost;" +
                             "Initial Catalog=SoftTradePlus;" +
                             "Integrated Security=True";
         SqlDataAdapter adapter;
@@ -28,7 +31,14 @@ namespace avicomTestChallange.windows
         {
             this.connection = new SqlConnection(conn);
         }
+        
 
+        /// <summary>
+        /// Исплнение запроса
+        /// </summary>
+        /// <param name="QueryText">Текст запроса</param>
+        /// <param name="ex">Обработчик ошибок</param>
+        /// <returns>DataTable с результатом запроса</returns>
         public DataTable Running(string QueryText, out Exception ex)
         {
             ex = null;
