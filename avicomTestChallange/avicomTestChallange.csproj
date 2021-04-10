@@ -76,6 +76,7 @@
     <Compile Include="windows\EditData\Pages\ProductPage.xaml.cs">
       <DependentUpon>ProductPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="windows\Query.cs" />
     <Compile Include="windows\ViewData\Pages\ClientByManagers.xaml.cs">
       <DependentUpon>ClientByManagers.xaml</DependentUpon>
     </Compile>

@@ -29,48 +29,30 @@ namespace avicomTestChallange.windows.EditData.Pages
         }
 
 
-        //подключение к бд
-        string conn = "Data Source=DESKTOP-5QF6I54;" +
-                            "Initial Catalog=SoftTradePlus;" +
-                            "Integrated Security=True";
-        SqlDataAdapter adapter;
-        DataTable ClientTable;
+        //создание экземпляра запросника
+        Query query = new Query();
+        Exception ex = null;
         int curid;
 
-        //Отправление запроса к БД и получение ответа
-        private void Query(SqlConnection connection, SqlCommand cmd, out DataTable ReturnTable)
+        //сообщнение об ошибке
+        private void Excpt()
         {
-            ReturnTable = new DataTable();
-            try
-            {
-                adapter = new SqlDataAdapter(cmd);
-                connection.Open();
-                adapter.Fill(ReturnTable);
-                connection.Close();
-            }
-            catch (Exception ex)
+            if (ex != null)
             {
                 MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (connection != null)
-                    connection.Close();
+                ex = null;
             }
 
         }
-
         //обновление значений датагрида
         private void UpdateGrid()
         {
             //наистраиваем запрос
             string sql = "SELECT * FROM Managers AS m";
-            ClientTable = new DataTable();
-            SqlConnection connection = new SqlConnection(conn);
-            SqlCommand cmd = new SqlCommand(sql, connection);
             DataTable QueryResult;
             //выполнение запроса
-            Query(connection, cmd, out QueryResult);
+            QueryResult = query.Running(sql, out ex);
+            Excpt();
             //загрузка новых данных в датагрид
             Managers.ItemsSource = QueryResult.DefaultView;
 
@@ -124,21 +106,25 @@ namespace avicomTestChallange.windows.EditData.Pages
             //настраиваем запрос на изменение данных
             string UpdateQuerry = "UPDATE Managers SET name = @name " +
                                     "WHERE id = @curid";
-            SqlConnection connection = new SqlConnection(conn);
             SqlCommand cmd = new SqlCommand();
-            cmd.Connection = connection;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = UpdateQuerry;
 
             //добовляем обьекту параметры
-            cmd.Parameters.Add("@name", SqlDbType.NVarChar, 50).Value = ManagerName.Text;
-            cmd.Parameters.Add("@curid", SqlDbType.Int).Value = curid;
+            try
+            {
+                cmd.Parameters.Add("@name", SqlDbType.NVarChar, 50).Value = ManagerName.Text;
+                cmd.Parameters.Add("@curid", SqlDbType.Int).Value = curid;
+            }
+            catch (Exception cex)
+            {
+                ex = cex;
+                Excpt();
+            }
             DataTable QueryResult = new DataTable();
 
             //запрашиваем изменения и обновляем датагрид
-            Query(connection, cmd, out QueryResult);
+            QueryResult = query.Running(UpdateQuerry, cmd, out ex);
+            Excpt();
             UpdateGrid();
-
 
             //обнуление полей
             ManagerName.Text = "";
@@ -162,15 +148,11 @@ namespace avicomTestChallange.windows.EditData.Pages
 
                 //настраиваем запрос
                 string removeQuery = "DELETE FROM Managers WHERE id = " + id.ToString();
-                SqlConnection connection = new SqlConnection(conn);
-                SqlCommand cmd = new SqlCommand();
-                cmd.Connection = connection;
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = removeQuery;
                 DataTable QueryResult;
 
                 //выполняем запрос и обнавляем датагрид
-                Query(connection, cmd, out QueryResult);
+                QueryResult = query.Running(removeQuery, out ex);
+                Excpt();
                 UpdateGrid();
             }
         }
@@ -185,18 +167,23 @@ namespace avicomTestChallange.windows.EditData.Pages
             //настраиваем запрос
             string addQuery = "INSERT INTO Managers([name])" +
                                 "VALUES (@name)";
-            SqlConnection connection = new SqlConnection(conn);
             SqlCommand cmd = new SqlCommand();
-            cmd.Connection = connection;
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = addQuery;
             DataTable QueryResult;
 
             //добовляем обьекту параметры
-            cmd.Parameters.Add("@name", SqlDbType.NVarChar, 50).Value = ManagerName.Text;
+            try
+            {
+                cmd.Parameters.Add("@name", SqlDbType.NVarChar, 50).Value = ManagerName.Text;
+            }
+            catch (Exception cex)
+            {
+                ex = cex;
+                Excpt();
+            }
 
             //выполнение запроса и обновление датагрида
-            Query(connection, cmd, out QueryResult);
+            QueryResult = query.Running(addQuery, cmd, out ex);
+            Excpt();
             UpdateGrid();
 
             //обнуление полей

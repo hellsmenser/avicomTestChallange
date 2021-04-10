@@ -23,9 +23,19 @@ namespace avicomTestChallange.windows.ViewData.Pages
     /// </summary>
     public partial class ClientByManagers : Page
     {
-        string conn = "Data Source=DESKTOP-5QF6I54;" +
-                               "Initial Catalog=SoftTradePlus;" +
-                               "Integrated Security=True";
+        Query query = new Query();
+        Exception ex = null;
+
+        //сообщение об ошибке
+        private void Excpt()
+        {
+            if (ex != null)
+            {
+                MessageBox.Show(ex.Message);
+                ex = null;
+            }
+
+        }
         public ClientByManagers()
         {
             InitializeComponent();
@@ -38,28 +48,11 @@ namespace avicomTestChallange.windows.ViewData.Pages
                             "FROM Clients AS c, Managers AS m " +
                             "WHERE c.manager = m.id " +
                             "GROUP BY m.name";
-            SqlConnection connection = new SqlConnection(conn);
-            SqlCommand cmd = new SqlCommand(sql, connection);
             DataTable QueryResult = new DataTable();
-            SqlDataAdapter adapter;
 
             //выполнение запроса
-            try
-            {
-                adapter = new SqlDataAdapter(cmd);
-                connection.Open();
-                adapter.Fill(QueryResult);
-                connection.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                if (connection != null)
-                    connection.Close();
-            }
+            QueryResult = query.Running(sql, out ex);
+            Excpt();
 
             //загрузка новых данных в датагрид
             grid.ItemsSource = QueryResult.DefaultView;

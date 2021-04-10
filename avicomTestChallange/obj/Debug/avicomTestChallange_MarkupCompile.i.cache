@@ -12,9 +12,9 @@ DEBUG;TRACE
 G:\repos\avicomTestChallange\avicomTestChallange\App.xaml
 121645404413
 
-171887406364
+18788323241
 16742710169
 windows\EditData\EditDataWindow.xaml;MainWindow.xaml;windows\EditData\Pages\ClientPage.xaml;windows\EditData\Pages\ManagerPage.xaml;windows\EditData\Pages\ProductPage.xaml;windows\ViewData\Pages\ClientByManagers.xaml;windows\ViewData\Pages\ClientByStatus.xaml;windows\ViewData\Pages\ClientList.xaml;windows\ViewData\Pages\ManagerList.xaml;windows\ViewData\Pages\ProductList.xaml;windows\ViewData\Pages\ProductsByClients.xaml;windows\ViewData\ViewDataWindow.xaml;
 
-False
+True
 
