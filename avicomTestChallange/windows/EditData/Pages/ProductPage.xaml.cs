@@ -82,6 +82,7 @@ namespace avicomTestChallange.windows.EditData.Pages
             else
             {
                 ProductPeriod.Items.Add("Лицензия");
+                ProductPeriod.SelectedIndex = 0;
             }
 
         }

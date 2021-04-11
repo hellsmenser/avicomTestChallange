@@ -33,6 +33,8 @@ namespace avicomTestChallange.windows.EditData.Pages
         Query query = new Query();
         Exception ex = null;
         int curid;
+        public string name;
+        DataTable QueryResult;
 
         //сообщнение об ошибке
         private void Excpt()
@@ -80,8 +82,6 @@ namespace avicomTestChallange.windows.EditData.Pages
                 Pick.IsEnabled = false;
 
                 //сохраняем старые параметры обьекта
-                string name;
-
                 int index = Managers.SelectedIndex;
                 DataRowView v = (DataRowView)Managers.Items[index];
                 curid = (int)v[0];
@@ -91,8 +91,6 @@ namespace avicomTestChallange.windows.EditData.Pages
                 ManagerName.Text = name;
 
             }
-
-
         }
 
         //кнопка сохранения изменений
@@ -161,14 +159,13 @@ namespace avicomTestChallange.windows.EditData.Pages
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             //плучаем параметры из полей ввода
-            string name = ManagerName.Text;
+            name = ManagerName.Text;
 
 
             //настраиваем запрос
             string addQuery = "INSERT INTO Managers([name])" +
                                 "VALUES (@name)";
             SqlCommand cmd = new SqlCommand();
-            DataTable QueryResult;
 
             //добовляем обьекту параметры
             try
